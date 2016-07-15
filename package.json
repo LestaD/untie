@@ -4,11 +4,18 @@
   "description": "Simple validators for your objects",
   "main": "lib/untie.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha -r should -R spec",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- -r should -R spec"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lestad/untie.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": ">= 4"
   },
   "keywords": [
     "validate",
@@ -29,5 +36,11 @@
   "bugs": {
     "url": "https://github.com/lestad/untie/issues"
   },
-  "homepage": "https://github.com/lestad/untie#readme"
+  "homepage": "https://github.com/lestad/untie#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "should": "^9.0.2",
+    "supertest": "^1.2.0"
+  }
 }
