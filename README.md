@@ -21,8 +21,8 @@ const input = {
 
 class UserValidator extends Validator {
   static schema = {
-    id: Type.number.REQUIRED,
-    name: Type.string.REQUIRED,
+    id: Type.number.Required,
+    name: Type.string.Required,
     profile: Type.shape({
       firstname: string,
       lastname: string,
@@ -50,8 +50,8 @@ const { Type, Validator } = require('untie');
 module.exports =
 class UserValidator extends Validator {
   static schema = {
-    login: Type.string.REQUIRED,
-    email: Type.string.REQURIED,
+    login: Type.string.Required,
+    email: Type.string.Required,
     password(dataObject, property) {
       const value = dataObject[property];
 
@@ -73,8 +73,8 @@ for Node < v6
 var untie = require('untie');
 
 module.exports = untie.createValidator({
-  login: untie.Type.string.REQUIRED,
-  email: untie.Type.string.REQURIED,
+  login: untie.Type.string.Required,
+  email: untie.Type.string.Required,
   password: function(dataObject, property) {
     var value = dataObject[property];
 
@@ -177,10 +177,10 @@ const exampleValidationSchema = {
   }),
 
   // That method must be defined
-  requiredFunc: func.REQUIRED,
+  requiredFunc: func.Required,
 
   // Should be passed any value
-  requiredAny: any.REQUIRED,
+  requiredAny: any.Required,
 
   customProperty: function(dataObject, property) {
     if (dataObject[property] >= 1200) {
@@ -189,10 +189,10 @@ const exampleValidationSchema = {
   },
 
   // Required all props in required shape
-  requiredShape: shape.REQUIRED({
-    target: number.REQUIRED,
-    amount: number.REQUIRED,
-    message: string.REQUIRED,
+  requiredShape: shape.Required({
+    target: number.Required,
+    amount: number.Required,
+    message: string.Required,
   }),
 };
 
