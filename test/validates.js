@@ -142,5 +142,5 @@ describe('Validates', () => {
   testArrayOf('func', [function(){}, console.log]);
   testArrayOf('number', [1,2,3.6, 0, -9]);
   testArrayOf('object', [{}, null, console]);
-  testArrayOf('symbol', [Symbol(), Symbol(), Symbol('foo')]);  
+  testArrayOf('symbol', [Symbol(), Symbol(), Symbol('foo')]);
 });

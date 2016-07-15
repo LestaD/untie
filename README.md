@@ -1,7 +1,18 @@
 # Readme
 
+[![GitHub stars](https://img.shields.io/github/stars/lestad/untie.svg)](https://github.com/lestad/untie/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lestad/untie.svg)](https://github.com/lestad/untie/network)
+[![npm](https://img.shields.io/npm/dm/untie.svg?maxAge=2592000)](https://npmjs.com/untie)
+[![GitHub issues](https://img.shields.io/github/issues/lestad/untie.svg?maxAge=2592000)]()
+[![Maintainer](https://img.shields.io/badge/maintainer-lestad-blue.svg)](https://lestad.top)
+
 Untie is a simple validator for JS-objects.
 
+[![Code Climate](https://codeclimate.com/github/LestaD/untie/badges/gpa.svg)](https://codeclimate.com/github/LestaD/untie)
+[![Test Coverage](https://codeclimate.com/github/LestaD/untie/badges/coverage.svg)](https://codeclimate.com/github/LestaD/untie/coverage)
+[![Issue Count](https://codeclimate.com/github/LestaD/untie/badges/issue_count.svg)](https://codeclimate.com/github/LestaD/untie)
+[![Build Status](https://travis-ci.org/LestaD/untie.svg?branch=master)](https://travis-ci.org/LestaD/untie)
+[![David](https://img.shields.io/david/dev/lestad/untie.svg?maxAge=2592000)]()
 
 ## Usage
 
@@ -38,6 +49,19 @@ console.log(UserValidator.validate(input));
 `validate` method returns:
 - `null` if passed document is valid.
 - `Error` if document has errors.
+
+
+## Installation
+
+
+[![NPM](https://nodei.co/npm/untie.png?compact=true)](https://nodei.co/npm/untie/)
+
+[![Minimum node](https://img.shields.io/badge/engines-node%20%3E%3D%204-green.svg)](https://github.com/LestaD/untie/blob/master/package.json)
+
+```bash
+npm install --save untie
+```
+
 
 ### Usage with Express
 
