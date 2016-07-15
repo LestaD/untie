@@ -1,0 +1,33 @@
+{
+  "name": "untie",
+  "version": "0.1.0",
+  "description": "Simple validators for your objects",
+  "main": "lib/untie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lestad/untie.git"
+  },
+  "keywords": [
+    "validate",
+    "json",
+    "rest",
+    "api",
+    "validator",
+    "map",
+    "mapper",
+    "data",
+    "custom",
+    "object",
+    "array",
+    "type"
+  ],
+  "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lestad/untie/issues"
+  },
+  "homepage": "https://github.com/lestad/untie#readme"
+}
