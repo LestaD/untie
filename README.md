@@ -120,7 +120,7 @@ module.exports = untie.createValidator({
 const UserValidator = require('validators/user');
 
 module.exports = function register(req, res, next) {
-  const error = UserValidator.validate(req.body);
+  const error = UserValidator.validate(req.body); // return null or error object
 
   if (error) {
     return next(error);
