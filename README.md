@@ -49,6 +49,7 @@ console.log(UserValidator.validate(input));
 `validate` method returns:
 - `null` if passed document is valid.
 - `Error` if document has errors.
+- object of `Error`s if document nested fields has errors.
 
 
 ## Installation
