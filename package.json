@@ -1,6 +1,6 @@
 {
   "name": "untie",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Simple validators for your objects",
   "main": "lib/untie.js",
   "scripts": {
