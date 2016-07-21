@@ -4,6 +4,7 @@
   "description": "Simple validators for your objects",
   "main": "lib/untie.js",
   "scripts": {
+    "dev": "NODE_ENV=test ./node_modules/.bin/mocha -r should -R landing",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha -r should -R spec",
     "coverage": "istanbul cover node_modules/.bin/_mocha -- -r should -R spec"
   },
